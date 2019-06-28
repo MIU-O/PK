@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html  >
 <head>
-  <!-- Site made with Mobirise Website Builder v4.10.3, https://mobirise.com -->
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v4.10.3, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  
   <link rel="shortcut icon" href="assets/images/miup-log-122x111.png" type="image/x-icon">
   <meta name="description" content="Site Maker Description">
   
@@ -24,7 +23,7 @@
   
   
 </head>
-<body>
+<body style="background-color:#9C5B4D;">
   <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-4">
 
     
@@ -120,6 +119,223 @@
         </div>
     </div>
 </section>
+
+
+
+<style> 
+
+input {
+  position: absolute;
+  right: 350px;
+  width: 300px;
+  
+  padding: 10px;
+}
+
+
+input[type=text] {
+  width: 40%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+label {
+    font: normal 20px Oswald !important;
+}
+#my-button {
+    background-color: #000000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+
+#my-button
+{  margin: 8px 0;    margin-top: 35px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    margin-left: 800px; display: flex; justify-content: right; }
+select {
+  font-family: Oswald;
+}
+select {
+  font-size: 16px;
+}
+#my-button:hover {
+    border: none;
+    background:brown;
+    box-shadow: 0px 0px 1px #777;
+}
+
+select {
+  width: 40%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+</style>
+
+<center>
+
+ <label><font color="white">Roll Number</font></label>
+<form>
+  <select id="year" name="year">
+  <option value="">--- Select Exam Type ---</option>
+  <option value="M">Master</option>
+  <option value="B">Bachelor </option>
+    <option value="D">Diploma</option>
+  </select>
+</form>
+ <label><font color="white">Choose Year</font></label>
+<form>
+
+  <select id="year" name="year">
+  <option value="">--- Select Year ---</option>
+  <option value="M">1990</option>
+  <option value="B">1991 </option>
+    <option value="D">1992</option>
+ <option value="D">1993</option>
+ <option value="D">1994</option>
+ <option value="D">1995</option>
+ <option value="D">1996</option>
+ <option value="D">1997</option>
+ <option value="D">1998</option>
+ <option value="D">1999</option>
+ <option value="D">2000</option>
+ <option value="D">2001</option>
+ <option value="D">2002</option>
+ <option value="D">2003</option>
+ <option value="D">2004</option>
+ <option value="D">2005</option>
+ <option value="D">2006</option>
+ <option value="D">2007</option>
+ <option value="D">2008</option>
+ <option value="D">2009</option>
+ <option value="D">2010</option>
+ <option value="D">2011</option>
+ <option value="D">2012</option>
+<option value="D">2013</option>
+<option value="D">2014</option>
+<option value="D">2015</option>
+<option value="D">2016</option>
+<option value="D">2017</option>
+<option value="D">2018</option>
+<option value="D">2019</option>
+  </select>
+</form>
+</center>
+<center>
+
+ <label><font color="white">Roll Number</font></label>
+
+
+<center>
+
+<form class="form-inline" id="my-form">
+
+  <div class="form-group">
+    <input type="text" id="my-input">
+ <button type="submit" id="my-button">View Result</button>
+  </div>
+</form></center>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+             // Define routing:
+var validValues = [{
+  value: 'STRING1',
+  url: 'https://google.com'
+},
+
+
+{
+  value: 'STRING2',
+  url: 'https://google.com'
+},
+
+{
+  value: 'STRING3',
+  url: 'https://google.com'
+},
+
+{
+  value: 'STRING4',
+  url: 'https://google.com'
+},
+
+{
+  value: 'STRING5',
+  url: 'https://google.com'
+},
+
+{
+  value: 'STRING6',
+  url: 'https://google.com'
+},
+
+{
+  value: 'STRING7',
+  url: 'https://google.com'
+},
+
+{
+  value: 'STRING8',
+  url: 'file:///C:/Users/Mohammad/Desktop/No%20Vergil%20DLC.webp'
+},
+
+{
+  value: 'STRING9',
+  url: 'http://1337x.st'
+},
+
+{
+  value: 'STRING10',
+  url: 'https://google.com'
+},
+
+
+];
+
+
+var $myInput = $('#my-input');
+$('#my-button').click(function(ev) {
+  ev.preventDefault(); // Prevent submitting the form already
+
+  // Look for a valid value
+  var url = './invalid.html';
+  $.each(validValues, function(i, validValue) {
+    if ($myInput.val() === validValue.value) {
+      url = validValue.url;
+      return false;
+    }
+  });
+
+  // Submit the form
+  $('#my-form').prop('action', url).submit();
+
+});
+    </script>
+</center>
+
+</div>
+</div>
+
+
 
 <section class="cid-ruDs2GZSJX" id="footer1-a">
 
